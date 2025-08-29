@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Week 2 CSS</title>
+  <style>
+    /* Element Selector */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0; /* HEX */
+      color: rgb(33, 33, 33); /* RGB */
+      margin: 20px;
+    }
+
+    /* ID Selector */
+    #about-title {
+      color: hsl(210, 100%, 40%); /* HSL */
+      text-align: center;
+    }
+
+    /* Class Selector */
+    .highlight {
+      background-color: rgba(255, 200, 0, 0.3); /* RGBA */
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    /* Attribute Selector */
+    a[target="_blank"] {
+      color: #ff5733;
+      text-decoration: none;
+    }
+
+    /* Pseudo-class Selector */
+    a:hover {
+      color: green;
+      text-decoration: underline;
+    }
+
+    /* Pseudo-element Selector */
+    p::first-letter {
+      font-size: 2em;
+      color: #d35400;
+    }
+
+    /* Unordered list of movies */
+    ul.movies {
+      list-style-type: square;
+    }
+
+    ul.movies li {
+      margin: 5px 0;
+      padding: 5px;
+    }
+
+    /* Favorite movie styled uniquely */
+    ul.movies li.favorite {
+      font-weight: bold;
+      color: #2c3e50;
+      background-color: #f1c40f;
+      border-radius: 8px;
+    }
+
+    /* Ordered list of cities */
+    ol.cities {
+      list-style-type: upper-roman;
+      padding-left: 20px;
+    }
+
+    ol.cities li {
+      margin: 8px 0;
+      padding: 5px;
+      border: 1px dashed hsl(340, 70%, 50%);
+      border-radius: 6px;
+      background: rgba(0, 128, 255, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="about-title">About Us</h1>
+  <p>
+    Welcome to our <span class="highlight">company page</span>. 
+    We are dedicated to providing the best services and support.
+  </p>
+  <p>
+    Learn more about us on 
+    <a href="https://example.com" target="_blank">our website</a>.
+  </p>
+
+  <h2>Favorite Movies</h2>
+  <ul class="movies">
+    <li>Inception</li>
+    <li class="favorite">Interstellar (Favorite)</li>
+    <li>Avengers: Endgame</li>
+    <li>The Dark Knight</li>
+  </ul>
+
+  <h2>Cities List</h2>
+  <ol class="cities">
+    <li>New York</li>
+    <li>London</li>
+    <li>Tokyo</li>
+    <li>Paris</li>
+    <li>Mumbai</li>
+  </ol>
+
+</body>
+</html>
